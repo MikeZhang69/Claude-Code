@@ -1,15 +1,12 @@
 {
   "name": "Claude Code Environment",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {
       "version": "3.10"
-    },
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "18"
     }
   },
-  "postCreateCommand": "pip install pandas matplotlib && npm install -g @anthropic-ai/claude-code && npm install express",
+  "postCreateCommand": "pip install pandas matplotlib && npm install @anthropic-ai/claude-code express",
   "customizations": {
     "vscode": {
       "extensions": [
